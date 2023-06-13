@@ -4,7 +4,7 @@ def conv_output_size(input_size, filter_size, stride=1, pad=0):
     return (input_size+2 * pad - filter_size) / stride + 1
 
 #im2col会考虑滤波器的大小 步幅 填充 将输入数据展开为2维数组
-def im2col(input_data, filter_h, filter_w, stride=1, pad=0):
+def im2col(input_data: object, filter_h: object, filter_w: object, stride: object = 1, pad: object = 0) -> object:
     N, C, H, W=input_data.shape
     out_h = (H + 2 * pad - filter_h) // stride + 1
     out_w = (W + 2 * pad - filter_w) // stride + 1      # //整除的意思

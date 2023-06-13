@@ -1,10 +1,10 @@
 import sys,os
-sys.path.append(os.path)
+sys.path.append(os.pardir)
 from im2col import im2col
-import numpy as np
+import  numpy as np
 
-x1=np.arange(96).reshape(3,2,4,4)
-col1=im2col(x1,2,2,stride=1,pad=0)
-print(x1)
-print('_______________________________')
-print(col1)
+
+x1=np.random.randn(1,3,7,7)
+print(x1.shape)
+col1=im2col(x1,5,5,stride=1,pad=0)
+print(col1.shape)
