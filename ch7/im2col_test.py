@@ -2,6 +2,7 @@ import sys,os
 sys.path.append(os.path)
 from im2col import im2col
 import numpy as np
+
 x1=np.random.rand(1,3,7,7)
 x2=np.random.rand(10,3,7,7)
 print(x1.shape)
