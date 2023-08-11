@@ -9,4 +9,4 @@ class SimpleConvNet:
         input_size=input_dim[1]  #获取输入数据的长度（宽度），计算输出数据的长（宽）
 
         conv_output_size=(input_size+2*filter_pad-filter_size)/filter_stride+1
-        pool_output_size=int()
+        pool_output_size=int(filter)

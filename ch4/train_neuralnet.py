@@ -56,7 +56,8 @@ for i in range(iters_num):
 # 绘制图形
 markers = {'train': 'o', 'test': 's'}
 x = np.arange(len(train_acc_list))        #x为一个数组，
-plt.plot(x, train_acc_list, label='train acc')
+plt.plot(x, train_acc_list, label=
+ 'train acc')
 plt.plot(x, test_acc_list, label='test acc', linestyle='--')
 plt.xlabel("epochs")
 plt.ylabel("accuracy")

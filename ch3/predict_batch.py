@@ -37,8 +37,9 @@ network = init_network()
 batch_size = 100 # 批数量
 accuracy_cnt = 0
 
-for i in range(0, len(x), batch_size):      #batch_size步长
-    x_batch = x[i:i+batch_size]
+#range返回一个列表 [0,batch_size,2*batchsize......]
+for i in range(0, len(x), batch_size):      #range返回一个列表batch_size步长
+    x_batch = x[i:i+batch_size] #从x中抽取i---i+batch_size中的batch_size个数据     x_batch为一个数组
     y_batch = predict(network, x_batch)
     p = np.argmax(y_batch, axis=1)
     accuracy_cnt += np.sum(p == t[i:i+batch_size])
