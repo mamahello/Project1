@@ -1,5 +1,6 @@
 import numpy as np
 
+#求梯度
 def numerical_gradient(f,x):          #x为一个数组 如x1,x2,x3,x4 多个自变量
     h=1e-4
     grad=np.zeros_like(x)
@@ -17,8 +18,8 @@ def numerical_gradient(f,x):          #x为一个数组 如x1,x2,x3,x4 多个自
 
     return grad
 
-
-def gradient_descent(f,init_x,lr=0.01,step_num=100):
+#梯度下降法求参数
+def gradient_descent(f,init_x,lr=0.01,step_num=100):  #step_num 更新次数
     x=init_x
 
     for i in range(step_num):

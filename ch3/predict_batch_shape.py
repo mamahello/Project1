@@ -23,7 +23,7 @@ w1, w2, w3 = network['W1'], network['W2'], network['W3']
 b1, b2, b3 = network['b1'], network['b2'], network['b3']
 
 
-print(x.shape,"x\n",  t.shape,"t\n",  w1.shape,"w1\n",  w2.shape,"w2\n",  w3.shape,"w3\n",   b1.shape,b2.shape,b3.shape)
+print(x.shape,"x\n",  t.shape,"t\n",  w1.shape,"w1\n",  w2.shape,"w2\n",  w3.shape,"w3\n",   b1.shape,"b1\n",b2.shape,"b2\n",b3.shape,"b3\n")
 
 a1 = np.dot(x, w1) + b1
 z1 = sigmoid(a1)
