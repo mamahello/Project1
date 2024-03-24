@@ -12,12 +12,11 @@ def img_show(img):
 #load_mnist函数以（训练图像，训练标签），（测试图像，测试标签）的形式返回读入的MNIST数据集
 
 (x_train,t_train),(x_text,t_text)=load_mnist(flatten=True,normalize=False)
-img=x_train[1]
-print(img.shape)
-label=t_train[1]
-print(label)
+img=x_train[60]
+#print(img.shape)
+#label=t_train[2]
+#print(label)
 
 img=img.reshape(28,28)
-print(img.shape)
 
 img_show(img)

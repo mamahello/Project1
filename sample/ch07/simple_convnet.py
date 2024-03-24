@@ -9,6 +9,7 @@ from common.gradient import numerical_gradient
 
 
 class SimpleConvNet:
+
     """简单的ConvNet
 
     conv - relu - pool - affine - relu - affine - softmax

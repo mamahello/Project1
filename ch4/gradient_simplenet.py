@@ -6,7 +6,7 @@ from common.gradient import numerical_gradient
 
 class simpleNet:
     def __init__(self):
-        self.W=np.random.randn(2,3)     #高斯分布初始化
+        self.W=np.random.randn(2,3)     #高斯分布初始化权重
 
     def predict(self,x):
         return np.dot(x,self.W)

@@ -82,11 +82,13 @@ class TwoLayerNet:
         for layer in layers:
             dout=layer.backward(dout)
 
-        grads={}    #字典存储结果
+        grads={}    #声明一个空字典，用字典存储结果
         grads['W1']=self.layers['Affine1'].dW
         grads['b1'] = self.layers['Affine1'].db
         grads['W2'] = self.layers['Affine2'].dW
         grads['b2'] = self.layers['Affine2'].db
 
         return grads        #返回一个字典，记录权重
+
+
 
